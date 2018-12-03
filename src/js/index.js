@@ -56,7 +56,7 @@ const authentication = (provider) => {
     if (user) {
       let userUid = user.uid;
       localStorage.setItem('userUid', userUid);
-      window.location.assign('src/views/asociado.html');
+      window.location.assign('../src/views/asociado.html');
     } else {
       console.log('no se ha accesado');
     }
