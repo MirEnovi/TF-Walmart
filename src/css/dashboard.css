@@ -107,3 +107,44 @@ nav {
 .exit {
   margin: 0em 1em 1em;
 }
+
+
+.blue-walmart {
+  background-color: #004C91 !important;
+}
+
+.img-width {
+  width: 203px;
+}
+
+.bg-menu {
+background-color: #F8F8F8;
+}
+
+.neg-letras {
+  color: black;
+  font-weight: bold;
+  }
+
+  .left-button {
+    margin-right: 25px;
+  }
+  .pointer-hand {
+    cursor:pointer;
+    cursor: hand;
+  }
+
+  .blue-t {
+    color: #0071ce;
+    font-weight: bold;
+  }
+
+  .green-t {
+    color: #5fb446;
+    font-weight: bold;
+  }
+
+  .yellow-t {
+    color: #fff200;
+    font-weight: bold;
+  }
