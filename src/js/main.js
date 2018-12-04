@@ -14,25 +14,25 @@ renderInfo = data => {
       console.log('date ', date)
       if (searchT != null) {
         result += `<div class="col s12">
-                             <div class="col s12">
-                             <div class="card horizontal">
-                               <div class="card-image">
-                                 <img src="${
-                                   data[prop].user.originalProfileImageURL
-                                 }">
-                               </div>
-                               <div class="card-stacked">
-                                 <div class="card-content">
-                                   <h5>@${data[prop].user.screenName}</h5> 
-                                   <p>${date} ${hour}</p> 
-                                   <p>${data[prop].text}</p>
-                                   <input type="text" id="myTextResponse" value="" placeholder="Responde">
-                                    <a class='btn-delete' data-message="${data[prop].id}">Responder</a>
-                                 </div>
-                               </div>
-                             </div>
-                           </div>
-                         </div>`;
+        <div class="col s12">
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="${
+              data[prop].user.originalProfileImageURL
+            }">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <h5 class="user">@${data[prop].user.screenName}</h5> 
+              <p class="date">${hour}  ${date} </p> </br>
+              <b><p class="font">${data[prop].text}</p></b></br>
+              <input type="text" id="myTextResponse" value="" placeholder="Escribe tu respuesta" class="inp"> 
+              <a class='btn-delete send' data-message="${data[prop].id}"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>`;
       }; 
       container.innerHTML = result;
 

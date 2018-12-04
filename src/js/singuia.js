@@ -23,11 +23,11 @@ renderInfo = data => {
                                  </div>
                                  <div class="card-stacked">
                                    <div class="card-content">
-                                     <h5>@${data[prop].user.screenName}</h5> 
-                                     <p>${date} ${hour}</p> 
-                                     <p>${data[prop].text}</p>
-                                     <input type="text" id="myTextResponse" value="" placeholder="Responde">
-                                      <a class='btn-delete' data-message="${data[prop].id}">Responder</a>
+                                     <h5 class="user">@${data[prop].user.screenName}</h5> 
+                                     <p class="date">${hour}  ${date} </p> </br>
+                                     <b><p class="font">${data[prop].text}</p></b></br>
+                                     <input type="text" id="myTextResponse" value="" placeholder="Escribe tu respuesta" class="inp"> 
+                                     <a class='btn-delete send' data-message="${data[prop].id}"><i class="fab fa-telegram-plane"></i></a>
                                    </div>
                                  </div>
                                </div>

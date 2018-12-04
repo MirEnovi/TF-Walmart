@@ -45,8 +45,7 @@ $(document).ready(function() {
 // cambios de vista
 
 goProcess.addEventListener('click', (e)=>{
-  // location.href=('../views/');
-  alert('filtrado');
+  location.href=('../views/singuia.html');
 });
 
 goIn.addEventListener('click', (e) => {
