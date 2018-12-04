@@ -61,3 +61,5 @@ firebase.auth().onAuthStateChanged(function (user) {
     console.log('no se ha accesado');
   }
 });
+
+
