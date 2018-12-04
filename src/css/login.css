@@ -1,12 +1,17 @@
+
 .inputs{
-    padding: 1rem;
+    padding: .5rem;
     width: 100%;
-}
+};
 
 .btnSend{
-    background-color: #2a73bd;
+    background-color: #004c91;
     color: white;
     height: 3rem;
     margin-top: 1rem;
     width: 100%;
-}
+};
+
+.bg-blue {
+    padding: 5em;
+};

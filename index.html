@@ -14,20 +14,37 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <section class="col-10">
-          <img src="./src/assets/walmart-logo.png" class="img-fluid" alt="Responsive image">
+        <section class="col-10 offset-1 col-md-6 offset-md-3  pt-4">
+            <img src="./src/assets/walmart-logo.png" class="img-fluid" alt="Walmart Logo">
         </section>  
-        <section class="col-10">
-          <input type="text" class="inputs" id="mail">
-          <input type="password" name="" id="password" class="inputs">  
-          <select class="inputs">
-              <option value="tienda">Tienda</option>
-              <option value="oficina">Oficina</option>
-          </select>
-          <button class="btn btnSend" id="btnLogin">Enviar</button>
-        </section>
-    
       </div>
+      <div class="row">
+        <section class="col-10 offset-1 col-md-6 offset-md-3 bg-primary p-3 rounded">
+          <form action="">
+            <label class="pt-1">Usuario</label>
+            <input type="text" class="inputs" id="mail">
+            <label class="pt-2">Contraseña</label>
+            <input type="password" name="" id="password" class="inputs"> 
+            <label class="pt-2">Dominio</label> 
+            <div class="input-group mb-3">
+              <select class="custom-select">
+                <option value="tienda">Tienda/Club</option>
+                <option value="oficina">Home Office</option>
+              </select>
+            </div>
+            <label class="pt-2">Determinante</label>
+            <input type="number" name="" id="" class="inputs">
+            <button class="btn btn-warning btn-lg btn-block pt-2 mt-3" id="btnLogin">Entrar</button>
+          </form>
+        </section>
+      </div>
+      <div class="row">
+          <section class="col-8 offset-2 col-md-6 offset-md-3 pt-4">
+              <img src="./src/assets/walmart-logo.png" class="img-fluid" alt="Walmart Logo">
+          </section>  
+        </div>
+
+
     </div>
     
     
