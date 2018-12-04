@@ -1,0 +1,27 @@
+.user{
+    font-size: 1.5rem;
+    color: blue;
+};
+
+.date{
+    font-size: .8rem;
+    color: gray;
+};
+
+.font{
+    font-size: 1.2rem;
+}
+
+.send{
+    font-size: 2rem;
+    color: #f9a825;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.inp{
+    display: flex;
+    float: left;
+    padding: 1.2rem;
+};
