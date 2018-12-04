@@ -22,15 +22,21 @@ const getInfo =(result)=> {
 const data = document.getElementById('data');
 let orders = result._embedded.orders;
 let domresult ='';
+let status= '';
+// orden._links.items.href.substr(44,19)
 orders.map((orden, i) => {
-  domresult += `<div class="col-lg-5  m-top-1">
-    <div  class="card col-sm-12">
-      <p><span></span></p>
-      <p>Fecha de entrega: ${orden.deliveryDate}<span></span></p>
-      <button>Detalle: </button>
-      <p>Status: ${orden.status}</p>
-    </div>
-  </div>`;
+  if (orden.status=='DELIVERED') {
+    status='<p class= "green-text">ENTREGADO</p>';
+  }
+  domresult += `
+          <tr>
+            <td>${orden._links.items.href.substr(44,19)}</td>
+            <td>${orden.deliveryDate}</td>
+            <td>${orden.deliveryPeriod}</td>
+            <td>${status}</td>
+          </tr>
+
+        </tbody>`;
 });
 data.innerHTML= domresult;
 
