@@ -50,3 +50,6 @@ background-color: #F8F8F8;
     color: #fff200;
     font-weight: bold;
   }
+.sidenav-overlay {
+  display: block;
+}
