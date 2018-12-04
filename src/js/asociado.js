@@ -13,8 +13,9 @@
 
 
 // btnSerach.addEventListener('click', filter);
+
 // Elementos HTML
-// const btnLogout = document.getElementById('btnLogout');
+const btnLogout = document.getElementById('btnLogout');
 
 
 
