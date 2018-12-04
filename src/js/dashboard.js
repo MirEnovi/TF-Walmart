@@ -1,3 +1,8 @@
+const goProcess = document.getElementById('go-in-process');
+const atentionTwitter = document.getElementById('atention-on-twitter');
+const goIn = document.getElementById('go-in');
+
+
 // side navbar iniatization with JQuery
 $(document).ready(function() {
   $('.sidenav').sidenav();
@@ -37,6 +42,22 @@ $(document).ready(function() {
   });
 });
 
+// cambios de vista
+
+goProcess.addEventListener('click', (e)=>{
+  // location.href=('../views/');
+  alert('filtrado');
+});
+
+goIn.addEventListener('click', (e) => {
+  location.href = ('../views/asociado.html');
+});
+
+atentionTwitter.addEventListener('click', (e) => {
+  location.href = ('../views/segTweets.html');
+});
+
+
 // Elementos HTML
 const btnLogout = document.getElementById('btnLogout');
 
@@ -45,6 +66,8 @@ btnLogout.addEventListener('click', el => {
   firebase.auth().signOut();
   window.location.assign('../../index.html');
 });
+
+
 
 // filtro
 // const search = document.getElementById('search');
