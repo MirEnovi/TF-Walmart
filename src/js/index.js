@@ -13,7 +13,7 @@ btnLogin.addEventListener('click', el => {
   localStorage.setItem('mail', mail);
   const promise = firebase.auth().signInWithEmailAndPassword(mail, pass)
     .then(function () {
-      promise.catch(el => console.log(e.message));
+      promise.catch(el => console.log(el.message));
     })
     .catch(function (error) {
       // Handle Errors here.
