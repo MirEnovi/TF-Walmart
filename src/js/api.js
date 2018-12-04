@@ -1,6 +1,6 @@
 const dataOrders =()=> {
 
-fetch('http://wmt-laboratoria.herokuapp.com/orders')
+fetch('https://wmt-laboratoria.herokuapp.com/orders')
 .then(data => data.json())
 .then(response => {
   getInfo(response);
