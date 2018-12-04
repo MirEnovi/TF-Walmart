@@ -1,51 +1,57 @@
 .sticky-offset {
-    top: 56px;
+  top: 56px;
 }
 
 #body-row {
-    margin-left:0;
-    margin-right:0;
+  margin-left: 0;
+  margin-right: 0;
 }
+
 #sidebar-container {
-    min-height: 100vh;
-    background-color: #004C91;
-    padding: 0;
+  min-height: 100vh;
+  background-color: #004C91;
+  padding: 0;
 }
+
 /* Sidebar sizes when expanded and expanded */
 .sidebar-expanded {
-    width: 230px;
+  width: 230px;
 }
+
 .sidebar-collapsed {
-    width: 60px;
+  width: 60px;
 }
 
 /* Menu item*/
 #sidebar-container .list-group a {
-    height: 50px;
-    color: white;
+  height: 50px;
+  color: white;
 }
 
 /* Submenu item*/
 #sidebar-container .list-group .sidebar-submenu a {
-    height: 45px;
-    padding-left: 30px;
+  height: 45px;
+  padding-left: 30px;
 }
+
 .sidebar-submenu {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 /* Separators */
 .sidebar-separator-title {
-    background-color: #004C91;
-    height: 35px;
+  background-color: #004C91;
+  height: 35px;
 }
+
 .sidebar-separator {
-    background-color: #004C91;
-    height: 25px;
+  background-color: #004C91;
+  height: 25px;
 }
+
 .logo-separator {
-    background-color:#004C91;
-    height: 60px;
+  background-color: #004C91;
+  height: 60px;
 }
 
 /* Closed submenu icon */
@@ -56,6 +62,7 @@
   text-align: right;
   padding-left: 10px;
 }
+
 /* Opened submenu icon */
 #sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
   content: " \f0da";
@@ -71,4 +78,15 @@
 
 .blue-menu {
   background-color: #004C91;
+}
+
+
+
+nav {
+  /* background-color: #2A73BD; */
+  color: #2A73BD;
+}
+
+.logo-nav {
+  height: 2em;
 }

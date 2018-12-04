@@ -56,7 +56,7 @@ firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
     let userUid = user.uid;
     localStorage.setItem('userUid', userUid);
-    location.href = ('./src/views/asociado.html');
+    location.href = ('./src/views/dashboard.html');
   } else {
     console.log('no se ha accesado');
   }
