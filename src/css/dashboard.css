@@ -1,5 +1,5 @@
 body {
-    background-color: #F8F9FA;
+  background-color: #F8F9FA;
 }
 
 
@@ -97,12 +97,13 @@ nav {
 }
 
 .card {
-    height: 20em;
+  height: 20em;
 }
 
-/* .cards {
-    margin-top: 3em;
-} */
+.btn-menu {
+  height: 5em;
+}
+
 .exit {
-    margin: 1.5em;
+  margin: 0em 1em 1em;
 }
