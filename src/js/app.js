@@ -7,7 +7,7 @@
     })*/
 
 
-const url = 'http://wmt-laboratoria.herokuapp.com/tweets/search?q=pruebatimfs';
+const url = 'https://wmt-laboratoria.herokuapp.com/tweets/search?q=pruebatimfs';
 
 window.onload = () => {
     fetch(url)
