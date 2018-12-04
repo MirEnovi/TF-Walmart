@@ -13,27 +13,19 @@ renderInfo = data => {
       const hour = getDate.slice(11, 16);
       console.log('date ', date)
       if (searchT != null) {
-        result += `<div class="col s12">
-        <div class="col s12">
-        <div class="card horizontal">
-          <div class="card-image">
-            <img src="${
-              data[prop].user.originalProfileImageURL
-            }">
-          </div>
-          <div class="card-stacked">
-            <div class="card-content">
-              <h5 class="user">@${data[prop].user.screenName}</h5> 
-              <p class="date">${hour}  ${date} </p> </br>
-              <b><p class="font">${data[prop].text}</p></b></br>
-              <input type="text" id="myTextResponse" value="" placeholder="Escribe tu respuesta" class="inp"> 
-              <a class='btn-delete send' data-message="${data[prop].id}"><i class="fab fa-telegram-plane"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>`;
-      }; 
+        result += `
+        <ul class="collection">
+    <li class="collection-item avatar">
+      <img src="${
+        data[prop].user.originalProfileImageURL
+      }" alt="" class="circle">
+      <span class="title">@${data[prop].user.screenName}</span>
+      <p>  ${data[prop].text} <br>
+         ${hour}  ${date}
+      </p></b></br>
+      <input type="text" id="myTextResponse" value= "@${data[prop].user.screenName} " placeholder="Escribe tu respuesta" class="inp"><a class='btn-delete send' data-message="${data[prop].id}"><i class="fab fa-telegram-plane"></i></a>
+</ul>`;
+      };
       container.innerHTML = result;
 
       if (container != "") {
@@ -69,9 +61,9 @@ document.getElementsByClass('btn-delete').addEventListener('click', (event) => {
 /*
 `<div class="col s12 m6">
                              <div class="card blue-grey darken-1">
-                             <p>Id: ${data[prop].id}</p> 
+                             <p>Id: ${data[prop].id}</p>
                                 <img src="${data[prop].user.biggerProfileImageURL}" alt="Smiley face" height="42" width="42">
-                                <p>Name: ${data[prop].user.name}</p> 
+                                <p>Name: ${data[prop].user.name}</p>
                                 <p>Twitte: ${data[prop].text}</p>
                                 <p>Fecha: ${data[prop].createdAd}</p>
                                 <input type="text" id="myTextResponse" value="Some text...">
@@ -108,8 +100,8 @@ renderInfo = data => {
                                </div>
                                <div class="card-stacked">
                                  <div class="card-content">
-                                   <h5>${data[prop].user.name}</h5> 
-                                   <p>${date} ${hour}</p> 
+                                   <h5>${data[prop].user.name}</h5>
+                                   <p>${date} ${hour}</p>
                                    <p>${data[prop].text}</p>
                                    <input type="text" id="myTextResponse" value="" placeholder="Responde">
                                     <a class='btn-delete' data-message="${data[prop].id}">Try it</a>

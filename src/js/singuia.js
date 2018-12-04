@@ -1,6 +1,6 @@
 renderInfo = data => {
     const container = document.getElementById("cardAsociado");
-  
+
       let result = "";
       for (const prop in data) {
         let message = `${data[prop].text}`;
@@ -13,29 +13,21 @@ renderInfo = data => {
         const hour = getDate.slice(11, 16);
         console.log('date ', date)
         if (searchT == null) {
-          result += `<div class="col s12">
-                               <div class="col s12">
-                               <div class="card horizontal">
-                                 <div class="card-image">
-                                   <img src="${
-                                     data[prop].user.originalProfileImageURL
-                                   }">
-                                 </div>
-                                 <div class="card-stacked">
-                                   <div class="card-content">
-                                     <h5 class="user">@${data[prop].user.screenName}</h5> 
-                                     <p class="date">${hour}  ${date} </p> </br>
-                                     <b><p class="font">${data[prop].text}</p></b></br>
-                                     <input type="text" id="myTextResponse" value="" placeholder="Escribe tu respuesta" class="inp"> 
-                                     <a class='btn-delete send' data-message="${data[prop].id}"><i class="fab fa-telegram-plane"></i></a>
-                                   </div>
-                                 </div>
-                               </div>
-                             </div>
-                           </div>`;
-        }; 
+          result += `
+          <ul class="collection">
+      <li class="collection-item avatar">
+        <img src="${
+          data[prop].user.originalProfileImageURL
+        }" alt="" class="circle">
+        <span class="title">@${data[prop].user.screenName}</span>
+        <p>  ${data[prop].text} <br>
+           ${hour}  ${date}
+        </p></b></br>
+        <input type="text" id="myTextResponse" value= "@${data[prop].user.screenName} " placeholder="Escribe tu respuesta" class="inp"><a class='btn-delete send right-align' data-message="${data[prop].id}"><i class="fab fa-telegram-plane"></i></a>
+  </ul>`;
+        };
         container.innerHTML = result;
-  
+
         if (container != "") {
           let elementsDelete = document.getElementsByClassName("btn-delete");
           for (let i = 0; i < elementsDelete.length; i++) {
@@ -49,11 +41,9 @@ renderInfo = data => {
         }
       }
   };
-  
+
   tweetResponse = () => {
     console.log("funcion tweetResponse");
   };
-  
+
   renderInfo()
-  
-  
