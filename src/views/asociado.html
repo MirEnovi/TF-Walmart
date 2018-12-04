@@ -6,19 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title> Walmart </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="../css/asociado.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-</head>
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
 <body>
   <div class="container-fluid">
     <header>
-      <nav>
-        <div  class="" id="navbarSupportedContent">
-        <button type="button" class="btn btn-secondary" id="btnLogout">Salir</button>
+      <nav class="bg-menu">
+        <div  class="right-align left-button" id="navbarSupportedContent">
+          <a href="#" data-target="slide-out" class="sidenav-trigger neg-letras"><i class="material-icons">menu</i></a>
+        <a class="neg-letras pointer-hand" id="btnLogout">Salir</a>
         </div>
       </nav>
+      <ul id="slide-out" class="sidenav blue darken-4">
+      <li><div class="user-view">
+        <img class="img-width" src="../assets/walmart-logo.png">
+        <div class="background">
+        </div>
+        <a href="#name"><span class="white-text name">Asociado</span></a>
+        <a href="#email"><span class="white-text email">asociado@walmart.mx</span></a>
+      </div></li>
+      <li><a href="#!" class="white-text"><i class="material-icons white-text ">trending_up</i> Dashboard</a></li>
+      <li><a href="#!" class="white-text"><i class="material-icons white-text">merge_type</i>En Proceso</a></li>
+      <li><a href="#!" class="white-text"><i class="fab fa-twitter white-text"> </i> Twitter</a></li>
+
+    </ul>
+
     </header>
+
+  <!--JQuery para menú desplegable-->
 <!--Empieza section de orderes-->
     <section class="cards-order row d-flex justify-content-around">
       <table>
@@ -35,22 +54,15 @@
       </table>
       <!-- este codigo es el que deberia repetirse -->
     </section>
-
   </div>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="../js/api.js">
+  </script>
+<script src="../js/asociado.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
 
-<script type="text/javascript" src="../js/api.js">
-
-</script>
-  <script src="../js/asociado.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
   <script src="../config/fb.js"></script>
-  <script src="../js/asociado.js"></script>
 </body>
 
 </html>

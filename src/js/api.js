@@ -25,15 +25,15 @@ let domresult ='';
 let status= '';
 // orden._links.items.href.substr(44,19)
 orders.map((orden, i) => {
-  if (orden.status=='DELIVERED') {
-    status='<p class= "green-text">ENTREGADO</p>';
-  }
+  // if (orden.status=='DELIVERED') {
+  //   status='<p class= "green-text">ENTREGADO</p>';
+  // }
   domresult += `
           <tr>
             <td>${orden._links.items.href.substr(44,19)}</td>
             <td>${orden.deliveryDate}</td>
             <td>${orden.deliveryPeriod}</td>
-            <td>${status}</td>
+            <td>${orden.status}</td>
           </tr>
 
         </tbody>`;
@@ -47,3 +47,6 @@ const validateOrder =(message)=> {
 }
 
 dataOrders();
+$(document).ready(function(){
+   $('.sidenav').sidenav();
+ })
