@@ -35,3 +35,18 @@ background-color: #F8F8F8;
     cursor:pointer;
     cursor: hand;
   }
+
+  .blue-t {
+    color: #0071ce;
+    font-weight: bold;
+  }
+
+  .green-t {
+    color: #5fb446;
+    font-weight: bold;
+  }
+
+  .yellow-t {
+    color: #fff200;
+    font-weight: bold;
+  }
