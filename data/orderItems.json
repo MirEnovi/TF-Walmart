@@ -1,0 +1,28 @@
+{
+    "_embedded": {
+        "items": [
+            {
+                "name": "Mass Effect Andromeda Xbox One",
+                "price": 499,
+                "url": "https://www.walmart.com.mx/videojuegos/Xbox-One/Juegos/Mass-Effect%20-Andromeda-Xbox-One_00001463373670",
+                "description": "Si eres fanático de la franquicia Mass Effect, entonces debes estar feliz de que EA haya anunciado que este año saldrá una nueva entrega la cual puedes adquirir en la tienda en línea de walmart.com.mx para tu consola Xbox One.",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/items/3"
+                    },
+                    "item": {
+                        "href": "http://localhost:8080/items/3"
+                    },
+                    "orderInfo": {
+                        "href": "http://localhost:8080/items/3/orderInfo"
+                    }
+                }
+            }
+        ]
+    },
+    "_links": {
+        "self": {
+            "href": "http://localhost:8080/orders/701-4833756-5422650/items"
+        }
+    }
+}

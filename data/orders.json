@@ -1,0 +1,55 @@
+{
+    "_embedded": {
+        "orders": [
+            {
+                "deliveryDate": "2019-01-01",
+                "lastUpdateTs": "2018-12-30T16:00:00.000+0000",
+                "deliveryPeriod": "10:00-11:00",
+                "status": "DELIVERED",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/orders/701-5152599-0149056"
+                    },
+                    "orderInfo": {
+                        "href": "http://localhost:8080/orders/701-5152599-0149056"
+                    },
+                    "items": {
+                        "href": "http://localhost:8080/orders/701-5152599-0149056/items"
+                    }
+                }
+            },
+            {
+                "deliveryDate": "2019-01-01",
+                "lastUpdateTs": "2018-12-30T16:00:00.000+0000",
+                "deliveryPeriod": "14:00-16:00",
+                "status": "DELIVERED",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/orders/701-4833756-5422650"
+                    },
+                    "orderInfo": {
+                        "href": "http://localhost:8080/orders/701-4833756-5422650"
+                    },
+                    "items": {
+                        "href": "http://localhost:8080/orders/701-4833756-5422650/items"
+                    }
+                }
+            }
+        ]
+    },
+    "_links": {
+        "self": {
+            "href": "http://localhost:8080/orders{?page,size,sort}",
+            "templated": true
+        },
+        "profile": {
+            "href": "http://localhost:8080/profile/orders"
+        }
+    },
+    "page": {
+        "size": 20,
+        "totalElements": 2,
+        "totalPages": 1,
+        "number": 0
+    }
+}
