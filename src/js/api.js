@@ -1,13 +1,4 @@
 const dataOrders =()=> {
-// let myHeaders =  new Headers ({
-//   "Content-Type": "application/json",
-//   "Access-Control-Allow-Origin": "*"
-// })
-// let myInit = { method: 'GET',
-// headers: myHeaders,
-// mode: "no-cors",
-// cache: 'default' };
-
 
 fetch('http://wmt-laboratoria.herokuapp.com/orders')
 .then(data => data.json())
@@ -33,26 +24,20 @@ orders.map((orden, i) => {
   } else if(orden.status == 'IN_PROGRESS') {
     status='<p class= "blue-t">IN_PROGRESS</p>';
 
+  } else if(orden.status == 'REFUND_REQUESTED') {
+    status='<p class= "yellow-t">REFUND_REQUESTED</p>';
+
   }
-  // case 'IN_PROGRESS':
-  //       status='<p class= "blue-t">IN_PROGRESS</p>';
-  // case 'UNDERWAY':
-  //       status='<p class= "green-t">UNDERWAY</p>';
-  // case 'RECEIVED':
-  //       status='<p class= "blue-t">RECEIVED</p>';
-  // case 'REFUNDED' :
-  //       status='<p class= "yellow-t">REFUNDED</p>';
-  // case 'REFUND_REQUESTED' :
-  //       status='<p class= "yellow-t">REFUND_REQUESTED</p>';
-  //     break;
-  //   default:
-  //
-  //   status='<p class= "blue-t">DELIVERED</p>';
+  else if(orden.status == 'REFUND') {
+    status='<p class= "yellow-t">REFUND</p>';
 
-
+  }
+  console.log(orden.clientName);
   domresult += `
           <tr>
             <td>${orden._links.items.href.substr(44,19)}</td>
+            <td>${orden.clientName}</td>
+            <td>${orden.contactPhone}</td>
             <td>${orden.deliveryDate}</td>
             <td>${orden.deliveryPeriod}</td>
             <td>${status}</td>

@@ -1,15 +1,4 @@
-.m-top-1 {
-  margin-top: 1em;
-}
 
-.navbar {
-  background-color: #2a73bd;
-  color: white;
-}
-
-.card {
-  background-color: rgb(89, 89, 90);
-}
 
 .blue-walmart {
   background-color: #004C91 !important;
@@ -50,3 +39,10 @@ background-color: #F8F8F8;
     color: #fff200;
     font-weight: bold;
   }
+.sidenav-overlay {
+  display: block;
+}
+
+.table {
+  margin-left: 1.5em;
+}

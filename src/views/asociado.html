@@ -8,6 +8,7 @@
   <title> Walmart </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="../css/asociado.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
@@ -15,39 +16,53 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <header>
-      <nav class="bg-menu">
-        <div class="right-align left-button" id="navbarSupportedContent">
-          <a href="#" data-target="slide-out" class="sidenav-trigger neg-letras show-on-medium-and-up"><i class="material-icons">menu</i></a>
-          <a href="./dashboard.html" class="neg-letras pointer-hand" id="btnLogout">Volver</a>
-        </div>
-      </nav>
-      <ul id="slide-out" class="sidenav blue darken-4">
-        <li>
-          <div class="user-view">
-            <img class="img-width" src="../assets/walmart-logo.png">
-            <div class="background">
+  <div class="container-fluid row">
+      <div class="col s3 nav-bg">
+          <div class="nav">
+            <div class="titulonav">
+              <ul class="list">
+                <li><img class="img-width" src="../assets/walmart-logo-w.png"></li>
+                <br>
+                <li>
+                  <a href="#name"><span class="white-text name">Asociado</span></a>
+                </li>
+                <li>
+                  <a href="#email"><span class="white-text email">asociado@walmart.mx</span></a>
+                </li>
+                <br>
+                <li>
+                  <a href="./asociado.html"><span class="white-text">Ordenes</span></a>
+                </li>
+                <li>
+                  <a href="./singuia.html"><span class="white-text">Peticiones Incompletas</span></a>
+                </li>
+                <li>
+                  <a href="./segTweets.html"><span class="white-text">Peticiones de Consulta</span></a>
+                </li>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <li><a href="./dashboard.html" class="exit"><span class="white-text">Volver</span></a></li>
+              </ul>
             </div>
-            <a href="#name"><span class="white-text name">Asociado</span></a>
-            <a href="#email"><span class="white-text email">asociado@walmart.mx</span></a>
           </div>
-        </li>
-        <li><a href="./dashboard.html" class="white-text"><i class="material-icons white-text ">trending_up</i> Home </a></li>
-        <li><a href="#!" class="white-text"><i class="material-icons white-text">merge_type</i>En Proceso</a></li>
-        <li><a href="./segTweets.html" class="white-text"><i class="fab fa-twitter white-text"> </i> Twitter</a></li>
+        </div>
 
-      </ul>
-
-    </header>
-
-    <!--JQuery para menú desplegable-->
-    <!--Empieza section de orderes-->
-    <section class="cards-order row d-flex justify-content-around">
-      <table>
+  <!--JQuery para menú desplegable-->
+<!--Empieza section de orderes-->
+    <section class="container col s8">
+      <table class="table">
         <thead>
           <tr>
             <th>ID</th>
+            <th>Cliente</th>
+            <th>Telefono</th>
             <th>Fecha de Entrega</th>
             <th>Hora de Entrega</th>
             <th>Status</th>
@@ -66,7 +81,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
 
-  <script src="../config/fb.js"></script>
 </body>
 
 </html>

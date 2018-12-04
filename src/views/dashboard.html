@@ -8,79 +8,88 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="../css/dashboard.css">
-
   <title>Walmart - Dashboard</title>
 </head>
-
 <body>
-  <header>
-    <nav class="bg-menu">
-      <div class="right-align left-button" id="navbarSupportedContent">
-        <a href="#" data-target="slide-out" class="sidenav-trigger neg-letras show-on-medium-and-up"><i class="material-icons">menu</i></a>
-        <a class="neg-letras pointer-hand" id="btnLogout">Salir</a>
-      </div>
-    </nav>
-    <ul id="slide-out" class="sidenav blue darken-4">
-      <li>
-        <div class="user-view">
-          <img class="img-width" src="../assets/walmart-logo.png">
-          <div class="background">
-          </div>
-          <a href="#name"><span class="white-text name">Asociado</span></a>
-          <a href="#email"><span class="white-text email">asociado@walmart.mx</span></a>
-        </div>
-      </li>
-      <li><a href="./asociado.html" class="white-text"><i class="material-icons white-text ">trending_up</i> Pedidos Entrantes </a></li>
-      <li><a href="" class="white-text"><i class="material-icons white-text">merge_type</i>En proceso</a></li>
-      <li><a href="./segTweets.html" class="white-text"><i class="fab fa-twitter white-text"> </i> Atención En Twitter </a></li>
-      <li><a class="white-text" id="btnLogout"><i class="fab fa-twitter white-text"> </i> Salir</a></li>
-
-    </ul>
-
-  </header>
-
-
-  <!-- <section class="row ">
-    <div class="col s8 m3 offset-m8 offset-s2">
-      <input type="text" placeholder="Buscador">
-    </div>
-    <button class="btn-floating grey "><i class="material-icons">search</i></button>
-  </section> -->
-
-  <section class=" cards row">
-    <div class="col l10 s12 offset-l1">
-      <div class="col s12  l4 offset-m1 waves-effect waves-light " id="go-in">
-        <div class="card white">
-          <div class="card-content black-text center">
-            <h1 class="card-title">Entrantes</h1>
-            <h3>3</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col s12  l4 offset-m1 waves-effect waves-light" id="go-in-process">
-        <div class="card white">
-          <div class="card-content black-text center">
-            <h1 class="card-title">En Proceso</h1>
-            <h3>10</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col s12  l4 offset-m1 waves-effect waves-light" id="atention-on-twitter">
-        <div class="card white">
-          <div class="card-content black-text center">
-            <h1 class="card-title">Atención en Twitter</h1>
-            <h3>12</h3>
-          </div>
+  <div class="container-fluid row">
+    <div class="col s3 nav-bg">
+      <div class="nav">
+        <div class="titulonav">
+          <ul class="list">
+            <li><img class="img-width" src="../assets/walmart-logo-w.png"></li>
+            <br>
+            <li>
+              <a href="#name"><span class="white-text name">Asociado</span></a>
+            </li>
+            <li>
+              <a href="#email"><span class="white-text email">asociado@walmart.mx</span></a>
+            </li>
+            <br>
+            <li>
+              <a href="./asociado.html"><span class="white-text">Ordenes</span></a>
+            </li>
+            <li>
+              <a href="./singuia.html"><span class="white-text">Peticiones Incompletas</span></a>
+            </li>
+            <li>
+              <a href="./segTweets.html"><span class="white-text">Peticiones de Consulta</span></a>
+            </li>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <li><a id="btnLogout" class="exit"><span class="white-text">Salir</span></a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- <section class="row ">
+      <div class="col s8 m3 offset-m8 offset-s2">
+        <input type="text" placeholder="Buscador">
+      </div>
+      <button class="btn-floating grey "><i class="material-icons">search</i></button>
+    </section> -->
+
+    <section class=" cards">
+      <div class="row">
+        <div class="col m9  l3  waves-effect waves-light" id="go-in">
+          <div class="card white card-shadow">
+            <div class="card-content black-text center">
+              <h1 class="card-title">Ordenes</h1>
+              <h3>3</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col m9  l3  waves-effect waves-light" id="go-in-process">
+          <div class="card white card-shadow">
+            <div class="card-content black-text center">
+              <h1 class="card-title">Peticiones Incompletas</h1>
+              <h3>10</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col m9  l3  waves-effect waves-light" id="atention-on-twitter">
+          <div class="card white card-shadow">
+            <div class="card-content black-text center">
+              <h1 class="card-title">Peticiones de Consulta</h1>
+              <h3>12</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
 
   <!--JQuery para menú desplegable-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
-  <script src="../config/fb.js"></script>
   <script src="../js/dashboard.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>
