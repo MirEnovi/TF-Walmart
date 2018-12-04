@@ -1,13 +1,4 @@
 const dataOrders =()=> {
-// let myHeaders =  new Headers ({
-//   "Content-Type": "application/json",
-//   "Access-Control-Allow-Origin": "*"
-// })
-// let myInit = { method: 'GET',
-// headers: myHeaders,
-// mode: "no-cors",
-// cache: 'default' };
-
 
 fetch('http://wmt-laboratoria.herokuapp.com/orders')
 .then(data => data.json())
@@ -34,6 +25,7 @@ orders.map((orden, i) => {
     status='<p class= "blue-t">IN_PROGRESS</p>';
 
   }
+  console.log(orden.clientName);
   // case 'IN_PROGRESS':
   //       status='<p class= "blue-t">IN_PROGRESS</p>';
   // case 'UNDERWAY':
@@ -53,6 +45,8 @@ orders.map((orden, i) => {
   domresult += `
           <tr>
             <td>${orden._links.items.href.substr(44,19)}</td>
+            <td>${orden.clientName}</td>
+            <td>${orden.contactPhone}</td>
             <td>${orden.deliveryDate}</td>
             <td>${orden.deliveryPeriod}</td>
             <td>${status}</td>
