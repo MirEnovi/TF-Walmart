@@ -1,18 +1,17 @@
-const container = document.getElementById('cardAsociado');
-
 renderInfo = (data) => {
+    const container = document.getElementById('cardAsociado');
+    document.getElementById('btnTwitter').addEventListener('click', (event) => {
 
-    document.getElementById('btn').addEventListener('click', (event) => {
         let result = '';
         for (const prop in data) {
 
             let message = `${data[prop].text}`;
             const re = /.{3}-.{7}-.{7}/g;
-            const search = message.match(re)
-            console.log(search);
-            console.log(message);
+            const searchT = message.match(re)
+                //console.log(searchT);
+                // console.log(message);
 
-            if (search != null) {
+            if (searchT != null) {
                 result += `<div class="card">
                              <div class="info">
                              <p>Id: ${data[prop].id}</p> 
