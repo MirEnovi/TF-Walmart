@@ -7,7 +7,31 @@
   color: white;
 }
 
-
-.logo-nav {
-  height: 2em;
+.card {
+  background-color: rgb(89, 89, 90);
 }
+
+.blue-walmart {
+  background-color: #004C91 !important;
+}
+
+.img-width {
+  width: 203px;
+}
+
+.bg-menu {
+background-color: #F8F8F8;
+}
+
+.neg-letras {
+  color: black;
+  font-weight: bold;
+  }
+
+  .left-button {
+    margin-right: 25px;
+  }
+  .pointer-hand {
+    cursor:pointer;
+    cursor: hand;
+  }
