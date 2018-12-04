@@ -13,7 +13,7 @@ btnLogin.addEventListener('click', el => {
   localStorage.setItem('mail', mail);
   const promise = firebase.auth().signInWithEmailAndPassword(mail, pass)
     .then(function () {
-      promise.catch(el => console.log(e.message));
+      promise.catch(el => console.log(el.message));
     })
     .catch(function (error) {
       // Handle Errors here.
@@ -56,7 +56,7 @@ firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
     let userUid = user.uid;
     localStorage.setItem('userUid', userUid);
-    location.href = ('./src/views/asociado.html');
+    location.href = ('./src/views/dashboard.html');
   } else {
     console.log('no se ha accesado');
   }

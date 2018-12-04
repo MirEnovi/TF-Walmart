@@ -4,13 +4,17 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./src/css/login.css">
 
     <title>Walmart</title>
+<<<<<<< HEAD
 </head>
 
 <body>
@@ -29,15 +33,56 @@
                 <button class="btn btnSend" id="btnLogin">Enviar</button>
             </section>
         </div>
+=======
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <section class="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
+            <img src="./src/assets/walmart-logo.png" class="responsive-img" alt="Walmart Logo">
+        </section>  
+      </div>
+      <div class="row">
+        <section class="col s12 m8 offset-m2 l6 offset-l3">
+          <div class="bgBlue">
+            <label class="fontsy">Usuario</label>
+            <input type="text" class="inputs" id="mail">
+            <label class="fontsy">Contraseña</label>
+            <input type="password" name="" id="password" class="inputs"> 
+            <label class="fontsy">Dominio</label> 
+            <div class="input-field">
+              <select class="">
+                <option value="tienda">Tienda/Club</option>
+                <option value="home">Home Office</option>
+              </select>
+            </div>
+            <label class="fontsy">Determinante</label>
+            <input type="number" name="" id="" class="inputs">
+            <button class="btn yellow darken-3 btn-large btnSize" id="btnLogin">Entrar</button>
+          </div>  
+        </section>
+      </div>
+      <div class="row">
+          <section class="col s4  md2 offset-s4 offset-md5">
+              <img src="./src/assets/walmart-mex.jpg" class="responsive-img" alt="Walmart Logo">
+          </section>  
+        </div>
+
+
+>>>>>>> upstream/master
     </div>
 
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.2.min.js" integrity="sha256-YE7BKn1ea9jirCHPr/EaW5NxmkZZGb52+ZaD2UKodXY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+      $('select').formSelect();
+      });  
+    </script>
     <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
     <script src="./src/config/fb.js"></script>
 
