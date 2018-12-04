@@ -1,5 +1,6 @@
 renderInfo = data => {
   const container = document.getElementById("cardAsociado");
+
     let result = "";
     for (const prop in data) {
       let message = `${data[prop].text}`;
@@ -11,14 +12,13 @@ renderInfo = data => {
       const date = getDate.slice(0, 10);
       const hour = getDate.slice(11, 16);
       console.log('date ', date)
-
       if (searchT != null) {
         result += `<div class="col s12">
                              <div class="col s12">
                              <div class="card horizontal">
                                <div class="card-image">
                                  <img src="${
-                                   data[prop].user.biggerProfileImageURL
+                                   data[prop].user.originalProfileImageURL
                                  }">
                                </div>
                                <div class="card-stacked">
@@ -27,14 +27,15 @@ renderInfo = data => {
                                    <p>${date} ${hour}</p> 
                                    <p>${data[prop].text}</p>
                                    <input type="text" id="myTextResponse" value="" placeholder="Responde">
-                                    <a class='btn-delete' data-message="${data[prop].id}">Try it</a>
+                                    <a class='btn-delete' data-message="${data[prop].id}">Responder</a>
                                  </div>
                                </div>
                              </div>
                            </div>
                          </div>`;
-      }
+      }; 
       container.innerHTML = result;
+
       if (container != "") {
         let elementsDelete = document.getElementsByClassName("btn-delete");
         for (let i = 0; i < elementsDelete.length; i++) {
