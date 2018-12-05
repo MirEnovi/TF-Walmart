@@ -37,8 +37,8 @@ renderInfo = data => {
           elementsTweets[i].addEventListener("click", e => {
             let key = e.target;
             let keyData = key.getAttribute("data-message");
-            console.log(keyData,data[prop].user.screenName, )
-            tweetResponse(keyData,message);
+            let message = document.getElementsByClassName("inp")[i].value;
+            tweetResponse(keyData, message);
           });
         }
       }
@@ -50,7 +50,7 @@ tweetResponse = (keyData, message) => {
   console.log(keyData)
 
   var url = 'https://wmt-laboratoria.herokuapp.com/tweets';
-  var data = `${message} Tu pedido está siendo atendido`;
+  var data = `${message}`;
 
 
   fetch(url, {
