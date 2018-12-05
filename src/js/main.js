@@ -32,13 +32,15 @@ renderInfo = data => {
         let elementsTweets = document.getElementsByClassName("btn-send");
 
         for (let i = 0; i < elementsTweets.length; i++) {
-          let message = document.getElementsByClassName("inp")[0].value;
+
           //console.log(elementsDelete[i]);
           elementsTweets[i].addEventListener("click", e => {
             let key = e.target;
             let keyData = key.getAttribute("data-message");
-            console.log(keyData,data[prop].user.screenName, )
-            tweetResponse(keyData,message);
+            console.log(keyData,data[prop].user.screenName)
+            let message = document.getElementsByClassName("inp")[i].value;
+            tweetResponse(keyData, message);
+
           });
         }
       }
@@ -50,7 +52,7 @@ tweetResponse = (keyData, message) => {
   console.log(keyData)
 
   var url = 'https://wmt-laboratoria.herokuapp.com/tweets';
-  var data = `${message} Tu pedido está siendo atendido`;
+  var data = `${message}`;
 
 
   fetch(url, {
